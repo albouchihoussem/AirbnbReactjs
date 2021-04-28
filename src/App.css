@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  color: rgb(34, 34, 34);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Explorer les environs*/
+.cities {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.cities>*{
+  flex: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.city {
+  display: flex;
 }
+.explore-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 5px;
+}
+/*Chez vous, partout*/
+
+.card-img {
+  width: 267px;
+  height: 267px;
+  border-radius: 5px;
+}
+/*Découvrez les expériences*/
+.exp-img {
+  width: 361.333px;
+  height: 361.333px;
+  border-radius: 5px;
+}
+
+.exp-paragraph {
+  margin-top: 14px;
+}
+/**/
+
+a p, a b  {
+  color: rgb(34, 34, 34);
+  line-height: 22px;
+  font-size: 14px;
+}
+
+a p {
+  font-size: 18px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
